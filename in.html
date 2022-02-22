@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="rs">
+</h1>
+<input type="number" id="st1">
+<input type="number" id="st2">
+<button onclick="tinh()">Tính tổng</button>
+</body>
+</html>
+<script>
+function tinh() {
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML = 'Tổng là:'+(a+b);
+}
+</script>

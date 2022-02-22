@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tong hop</title>
+</head>
+<body>
+<h1 id="rs">Caculator</h1> <br>
+<input type="number" id="st1">
+<input type="number" id="st2"> <br> <br>
+
+<button onclick="cong()"> Cộng</button>
+<button onclick="tru()"> Trừ</button>
+<button onclick="nhan()"> Nhân</button>
+<button onclick="chia()"> Chia</button>
+
+</body>
+</html>
+<script>
+function cong () {
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML = 'Tổng là:'+(a+b)
+}
+function tru () {
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML = 'Trừ là:'+(a-b)
+}
+function nhan () {
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML = 'nhân là:'+(a*b)
+}
+function chia () {
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML = 'chia là:'+(a/b)
+}
+</script>
