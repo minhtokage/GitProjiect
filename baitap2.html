@@ -3,6 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .bang{
+            border-collapse: collapse;
+            text-align: center;
+            width: 700px;
+        }
+        .chudam{
+            font-weight: bold;
+        }
+        .bang th, td{
+           text-align: center;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        .bang tr:nth-child(even){
+
+        background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
 <H2>Market Research Survey</H2>
@@ -59,12 +78,57 @@ Please take a few moments to complete this satisfaction survey.
 </div>
 <br>
 $<input type="text" style="width: 50px"> . <input type="text" style="width: 20px"> <br>
-  Dollals      cents
+<table>
+    <tr>
+        <th></th>
+        <th>Dollals</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+         <th>cents</th>
+    </tr>
+</table>
+
 <br> <br>
-What features would you like to see in the new projiect <br>
-<textarea name="" id="" cols="90" rows="10"></textarea> <br>
-
-
-
+<div class="chudam">What features would you like to see in the new projiect </div>
+<br>
+<textarea name= id="" cols="90" rows="10"></textarea> <br>
+<br>
+<div class="chudam">Please rate your level of agreement wiht the folling statements</div>
+<br>
+<table class="bang">
+    <tr>
+        <th></th>
+        <th>Rất không đồng ý</th>
+        <th>Không thích</th>
+        <th>Đồng ý</th>
+        <th>Rất đồng ý</th>
+    </tr>
+    <tr>
+        <td>Your products are priced fairli</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+    </tr>
+    <tr>
+        <td>Your products are hight quality</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+    </tr>
+    <tr>
+        <td>Would you coment your products</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+        <td><input type="radio" ><br>1</td>
+    </tr>
+</table>
+<br> <br>
+<input type="submit" value="Submit">
 </body>
 </html>
